@@ -1,0 +1,14 @@
+{
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": "pcm_s24le",
+    "normalize": false
+  },
+  "metadata": {
+    "embedIXML": false
+  },
+  "filters": {
+    "mode": "mov"
+  }
+}

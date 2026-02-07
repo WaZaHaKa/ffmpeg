@@ -1,0 +1,146 @@
+:root {
+  color-scheme: dark;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: radial-gradient(circle at top, #24124a 0%, #0c0c1f 45%, #07070f 100%);
+  color: #e9e6ff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(21, 20, 35, 0.7);
+  border: 1px solid rgba(100, 87, 255, 0.5);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 32px rgba(109, 93, 255, 0.35);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.wallet {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.wallet__label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #7ee7ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.panel {
+  background: rgba(12, 12, 24, 0.7);
+  border: 1px solid rgba(88, 180, 255, 0.35);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.field.check {
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 13px;
+  color: #a1b3ff;
+}
+
+input,
+select,
+button {
+  background: rgba(10, 12, 24, 0.8);
+  border: 1px solid rgba(106, 203, 255, 0.5);
+  color: #e9e6ff;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+button.primary {
+  background: linear-gradient(120deg, #7f5bff, #3fe2ff);
+  color: #0b0b1d;
+  border: none;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.logs {
+  border: 1px solid rgba(88, 180, 255, 0.35);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.logs__header {
+  background: rgba(120, 90, 255, 0.15);
+  padding: 8px 12px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logs pre {
+  margin: 0;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #d7d7ff;
+  min-height: 140px;
+}
+
+.results table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results th,
+.results td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(88, 180, 255, 0.2);
+  text-align: left;
+  font-size: 13px;
+}
+
+.status.ok {
+  color: #7dffcc;
+}
+
+.status.warn {
+  color: #ffc27d;
+}
