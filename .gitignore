@@ -1,79 +1,69 @@
-# =========================
-# Dependencies
-# =========================
-**/node_modules/
-**/bower_components/
+############################################
+# OS / Editor
+############################################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
 
-# =========================
+.vscode/
+.idea/
+
+############################################
+# Logs
+############################################
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+############################################
+# Env files (keep examples)
+############################################
+.env
+.env.*
+!.env.example
+!.env.sample
+
+############################################
+# Node / JS package managers
+############################################
+**/node_modules/
+**/.pnp.*
+**/.yarn/*
+**/.npmrc.local
+**/.pnpm-store/
+
+############################################
 # Build outputs (common)
-# =========================
+############################################
 **/dist/
 **/build/
 **/out/
 **/release/
-**/releases/
-**/bin/
-**/obj/
-**/target/
-**/.output/
+**/coverage/
+**/.cache/
+**/.vite/
+**/.turbo/
+**/.parcel-cache/
 **/.next/
 **/.nuxt/
 **/.svelte-kit/
-**/.vercel/
-**/.netlify/
-**/coverage/
 
-# Electron / desktop packagers
+############################################
+# Electron (common)
+############################################
 **/app/dist/
 **/app/build/
 **/electron/dist/
-**/electron/build/
-**/packaged/
-**/unpacked/
-**/*.AppImage
-**/*.dmg
-**/*.exe
-**/*.msi
-**/*.zip
+**/electron/out/
 
-# =========================
-# Tooling caches
-# =========================
-**/.vite/
-**/.cache/
-**/.parcel-cache/
-**/.turbo/
-**/.eslintcache
-**/.stylelintcache
-**/*.tsbuildinfo
-
-# =========================
-# Logs
-# =========================
-**/*.log
-**/npm-debug.log*
-**/yarn-debug.log*
-**/yarn-error.log*
-**/pnpm-debug.log*
-**/lerna-debug.log*
-
-# =========================
-# Environment / secrets
-# =========================
-**/.env
-**/.env.*
-!**/.env.example
-
-# =========================
-# OS / editor junk
-# =========================
-.DS_Store
-Thumbs.db
-desktop.ini
-
-.vscode/
-!.vscode/extensions.json
-!.vscode/settings.json
-.idea/
-*.swp
-*~
+############################################
+# Python (just in case)
+############################################
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
