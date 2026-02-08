@@ -88,11 +88,6 @@ button {
   padding: 10px 12px;
 }
 
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 button.primary {
   background: linear-gradient(120deg, #7f5bff, #3fe2ff);
   color: #0b0b1d;
@@ -127,22 +122,11 @@ button.primary {
   line-height: 1.5;
   color: #d7d7ff;
   min-height: 140px;
-  max-height: 200px;
-  overflow: auto;
 }
 
 .results table {
   width: 100%;
   border-collapse: collapse;
-}
-
-.results__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-  color: #9be7ff;
-  font-size: 13px;
 }
 
 .results th,
@@ -153,20 +137,10 @@ button.primary {
   font-size: 13px;
 }
 
-.results__empty {
-  text-align: center;
-  padding: 24px;
-  color: #9fb1ff;
-}
-
 .status.ok {
   color: #7dffcc;
 }
 
 .status.warn {
   color: #ffc27d;
-}
-
-.status.error {
-  color: #ff6b6b;
 }
