@@ -67,3 +67,35 @@ __pycache__/
 *.pyo
 .venv/
 venv/
+
+### BEGIN: purge_build_repo.py managed ###
+**/node_modules/
+**/.pnp.*
+**/.yarn/*
+**/.pnpm-store/
+**/dist/
+**/build/
+**/out/
+**/release/
+**/coverage/
+**/.cache/
+**/.vite/
+**/.turbo/
+**/.parcel-cache/
+**/.next/
+**/.nuxt/
+**/.svelte-kit/
+**/app/dist/
+**/app/build/
+**/electron/dist/
+**/electron/out/
+*.log
+Thumbs.db
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+.idea/
+### END: purge_build_repo.py managed ###
