@@ -1,0 +1,19 @@
+{
+  "conversion": {
+    "inputDir": "",
+    "outputDir": "",
+    "runLogsDir": ".runlogs"
+  },
+  "injection": {
+    "root": "",
+    "glob": "*.mov",
+    "renamedDir": "renamed_mov",
+    "logDir": "logs",
+    "nameTemplate": "{date}_{time}_{n}_{stem}",
+    "doRename": true,
+    "doCsv": true,
+    "doHash": true,
+    "doVersions": true,
+    "toolsDir": "tools"
+  }
+}
