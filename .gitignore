@@ -50,6 +50,13 @@ lerna-debug.log*
 **/.next/
 **/.nuxt/
 **/.svelte-kit/
+**/.runlogs/
+**/logs/
+**/out_wav/
+**/renamed_mov/
+**/tools/
+!tools/
+!tools/**
 
 ############################################
 # Electron (common)
